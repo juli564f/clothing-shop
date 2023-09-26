@@ -3,7 +3,7 @@ export default function Header(props) {
         <nav className="navbar">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Phone - Book
+            Clothing shop
           </a>
         </div>
       </nav>
