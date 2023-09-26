@@ -10,6 +10,7 @@ import Header from './components/Header';
 //Sidebar import
 import'./components/sidebar.css';
 import Sidebar from './components/Sidebar';
+import  Carousel from './components/Carousel';
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Sidebar/> 
         <main>
           <card/>
+          <Carousel/>
         </main>
       </div>
     </div>
