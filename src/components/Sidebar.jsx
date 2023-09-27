@@ -10,7 +10,7 @@ export default function Sidebar(props) {
     return (
         <div>
             <nav className="nav flex-column">
-                <img src={shoppingCart} alt="shoppingcartlogo" />
+                <img className="shoppingcart" src={shoppingCart} alt="shoppingcartlogo" />
 
                 <a className="nav-link" href="#">Indkøbskurv</a>
                 <a className="nav-link" href="#">Produkter</a>
