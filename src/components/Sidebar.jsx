@@ -24,7 +24,7 @@ import shoppingCart from "./img_171562-3516626141.png"
 
 
 
-function Example() {
+function OffCanvasExample({name, ...props}) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -32,17 +32,19 @@ function Example() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch
+      <Button variant="outline-dark" onClick={handleShow} className="me-2">
+      <img  src={shoppingCart} alt="shoppingcartlogo" style={{ width: '20px' }} />
+      
       </Button>
 
-      <Offcanvas show={show} onHide={handleClose}>
+      <Offcanvas show={show} onHide={handleClose} {...props} >
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>Shoppingcart</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+        <a className="nav-link" href="#">Indkøbskurv</a>
+                <a className="nav-link" href="#">Produkter</a>
+                <button>Betal</button>
         </Offcanvas.Body>
       </Offcanvas>
     </>
@@ -50,3 +52,14 @@ function Example() {
 }
 
 export default Example
+
+function Example() {
+  return (
+    <>
+      {[ 'end'].map((placement, idx) => (
+        <OffCanvasExample key={idx} placement={placement} name={placement} />
+      ))}
+    </>
+  );
+}
+

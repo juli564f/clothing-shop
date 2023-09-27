@@ -10,6 +10,7 @@ import Header from './components/Header';
 //Sidebar import
 import'./components/sidebar.css';
 import Sidebar from './components/Sidebar';
+import Offcanvas from 'react-bootstrap';
 import  Carousel from './components/Carousel';
 
 
