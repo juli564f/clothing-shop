@@ -5,9 +5,6 @@ import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import { CarouselItem } from 'react-bootstrap';
 
-<<<<<<< HEAD
- function GridExample() {
-=======
 
 
 
