@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 
-function GridExample() {
+ function GridExample() {
   return (
     <Row xs={1} md={5} className="g-4">
       {Array.from({ length: 10 }).map((_, idx) => (

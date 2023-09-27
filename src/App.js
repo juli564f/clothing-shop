@@ -23,7 +23,6 @@ function App() {
       <div className='bigFlex'>
         <Sidebar/> 
         <main>
-          <card/>
           <Carousel/>
         </main>
       </div>
