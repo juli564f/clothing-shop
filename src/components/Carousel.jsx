@@ -12,8 +12,6 @@ import Button from 'react-bootstrap/Button';
 //Card importeret. 
 import Card from 'react-bootstrap/Card';
 
-
-
 function BasicExample() {
   return (
     //Jeg har lavet div til alle kortene sammen som hedder "cards"
