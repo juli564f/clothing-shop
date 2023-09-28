@@ -3,8 +3,8 @@ import React from "react";
 //import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
-import shoppingCart from "./img_171562-3516626141.png"
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import shoppingCart from "./img_171562-3516626141.png"
 
 
 /* "name" er navnet på offcanvas knappen, her referere den til "end" set i return */ 

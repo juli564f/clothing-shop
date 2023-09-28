@@ -37,7 +37,7 @@ export default function Carousel(){
       size: 'Medium',
       price: 150,
     },
-
+    
   ]
 
   const [clothing, setClothing] = useState(cardDummyData);

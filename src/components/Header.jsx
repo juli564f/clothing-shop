@@ -1,3 +1,7 @@
+import Sidebar from "./Sidebar";
+
+
+
 export default function Header(props) {
     return( 
           <nav className="navbar">
@@ -5,6 +9,7 @@ export default function Header(props) {
               <a className="navbar-brand" href="#">
                 Clothing shop
               </a>
+              <Sidebar /> 
             </div>
           </nav>
     )
