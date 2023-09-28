@@ -7,9 +7,6 @@ import Button from 'react-bootstrap/Button';
 //Dette er vores skabelon til vores kort som indeholder tøjet.
 export default function Cartitem({item}) {
   return (
-
-    export default function Cartitem({item}) {
-        return (
           <Card style={{ width: '18rem',  margin:'20px'}}>
               <Card.Img variant="top" src={item.img} alt="Hoodie" />
               <Card.Body>
@@ -20,13 +17,12 @@ export default function Cartitem({item}) {
                       <p><span> Pris: </span>{item.price}</p>
       
                   </Card.Text>
-                  
+
                     <Button>Pay</Button>
 
                 </Card.Body>
         </Card>
-        )
-      }
+        
       
   )
 }
