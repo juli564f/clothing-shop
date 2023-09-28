@@ -6,65 +6,48 @@ import Hoodie from "./hoodie-png-4-3601372402.png"
 import Pants from "./bukser.png"
 import Shirt from "./shirt.png"
 
-//Button importeret
-import Button from 'react-bootstrap/Button';
 
-//Card importeret. 
-import Card from 'react-bootstrap/Card';
+import Carditem from "./Carditem";
+import { useState } from "react";
 
-function BasicExample() {
-  return (
-    //Jeg har lavet div til alle kortene sammen som hedder "cards"
-    <div className='cards'>
 
-      {/* Dette er kort 1 med Hoodien  */}
-        <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src={Hoodie} alt="Hoodie" />
-          <Card.Body>
-            <Card.Title> <span>Hoodie</span></Card.Title>
-            <Card.Text>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vel ut fugit minima at? Itaque non quasi possimus, tenetur temporibus minus cupiditate totam quia explicabo, veniam rem ipsa consectetur deserunt.</p>
-              <p><span>Størrelse: </span>Medium </p>
-              <p><span>Pris: </span>250 kr</p>
 
-            </Card.Text>
-            <Button variant="primary">Add to cart</Button>
-          </Card.Body>
-        </Card>
+export default function Carousel(){
+  //Dette er vores datapunkt
+  const cardDummyData = [
+    {
+      img: Hoodie,
+      title: 'Hoodie',
+      text: 'Rød bomulds hættetrøje',
+      size:'Medium',
+      price: 450, 
+    },
+    {
+      img: Pants,
+      title:'Pants',
+      text: 'Jeans',
+      size: 'Medium',
+      price: 350,
+      
+    },
+    {
+      img: Shirt,
+      title:'T-shirt',
+      text: 'Orange t shirt',
+      size: 'Medium',
+      price: 150,
+    },
 
-      {/* Dette er kort 2 med pants.  */}
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={Pants} alt="Pants" />
-        <Card.Body>
-          <Card.Title> <span>Pants</span> </Card.Title>
-          <Card.Text>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vel ut fugit minima at? Itaque non quasi possimus, tenetur temporibus minus cupiditate totam quia explicabo, veniam rem ipsa consectetur deserunt.</p>
-              <p><span>Størrelse: </span>Medium </p>
-              <p><span>Pris: </span>250 kr</p>
+  ]
 
-          </Card.Text>
-          <Button variant="primary">Add to cart</Button>
-        </Card.Body>
-      </Card>
+  const [clothing, setClothing] = useState(cardDummyData);
 
-      {/* Dette er kort 3 med t shirt.  */}
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={Shirt} alt="Shirt" />
-        <Card.Body>
-          <Card.Title> <span>T-shirt</span> </Card.Title>
-          <Card.Text>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vel ut fugit minima at? Itaque non quasi possimus, tenetur temporibus minus cupiditate totam quia explicabo, veniam rem ipsa consectetur deserunt.</p>
-              <p><span>Størrelse: </span>Medium </p>
-              <p><span>Pris: </span>250 kr</p>
-          </Card.Text>
-          <Button variant="primary">Add to cart</Button>
-        </Card.Body>
-      </Card>    
+
+  return(
+    <div className="cards">
+      {clothing.map(item =>{
+        return <Carditem item={item} />
+      })}
     </div>
-
-
-  );
+  )
 }
-
-export default BasicExample;
-

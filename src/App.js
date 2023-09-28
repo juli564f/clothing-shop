@@ -10,6 +10,8 @@ import Header from './components/Header';
 //Sidebar import
 import'./components/sidebar.css';
 import Sidebar from './components/Sidebar';
+
+import "./components/carousel.css"
 import  Carousel from './components/Carousel';
 
 
@@ -29,6 +31,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;
