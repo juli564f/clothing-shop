@@ -12,8 +12,6 @@ import Button from 'react-bootstrap/Button';
 //Card importeret. 
 import Card from 'react-bootstrap/Card';
 
-
-
 function BasicExample() {
   return (
     //Jeg har lavet div til alle kortene sammen som hedder "cards"
@@ -23,10 +21,12 @@ function BasicExample() {
         <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" src={Hoodie} alt="Hoodie" />
           <Card.Body>
-            <Card.Title>Hoodie</Card.Title>
+            <Card.Title> <span>Hoodie</span></Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vel ut fugit minima at? Itaque non quasi possimus, tenetur temporibus minus cupiditate totam quia explicabo, veniam rem ipsa consectetur deserunt.</p>
+              <p><span>Størrelse: </span>Medium </p>
+              <p><span>Pris: </span>250 kr</p>
+
             </Card.Text>
             <Button variant="primary">Add to cart</Button>
           </Card.Body>
@@ -36,10 +36,12 @@ function BasicExample() {
       <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={Pants} alt="Pants" />
         <Card.Body>
-          <Card.Title>Pants</Card.Title>
+          <Card.Title> <span>Pants</span> </Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vel ut fugit minima at? Itaque non quasi possimus, tenetur temporibus minus cupiditate totam quia explicabo, veniam rem ipsa consectetur deserunt.</p>
+              <p><span>Størrelse: </span>Medium </p>
+              <p><span>Pris: </span>250 kr</p>
+
           </Card.Text>
           <Button variant="primary">Add to cart</Button>
         </Card.Body>
@@ -49,10 +51,11 @@ function BasicExample() {
       <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={Shirt} alt="Shirt" />
         <Card.Body>
-          <Card.Title>T-shirt</Card.Title>
+          <Card.Title> <span>T-shirt</span> </Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vel ut fugit minima at? Itaque non quasi possimus, tenetur temporibus minus cupiditate totam quia explicabo, veniam rem ipsa consectetur deserunt.</p>
+              <p><span>Størrelse: </span>Medium </p>
+              <p><span>Pris: </span>250 kr</p>
           </Card.Text>
           <Button variant="primary">Add to cart</Button>
         </Card.Body>

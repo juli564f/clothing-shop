@@ -32,8 +32,6 @@ export default function Sidebar({}) {
       </Button>
       </div>
 
-
-
       <Offcanvas show={show} onHide={handleClose} placement="end" >
         <Offcanvas.Body>
           <Offcanvas.Title>Shoppingcart</Offcanvas.Title>
@@ -42,6 +40,7 @@ export default function Sidebar({}) {
           <button>Pay</button>
         </Offcanvas.Body>
       </Offcanvas>
+
     </>
   );
 }
