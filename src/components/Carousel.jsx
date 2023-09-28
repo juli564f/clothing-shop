@@ -25,8 +25,10 @@ function BasicExample() {
           <Card.Body>
             <Card.Title>Hoodie</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vel ut fugit minima at? Itaque non quasi possimus, tenetur temporibus minus cupiditate totam quia explicabo, veniam rem ipsa consectetur deserunt.</p>
+              <p><span>Størrelse: </span>Medium </p>
+              <p><span>Pris: </span>250 kr</p>
+
             </Card.Text>
             <Button variant="primary">Add to cart</Button>
           </Card.Body>
@@ -38,8 +40,10 @@ function BasicExample() {
         <Card.Body>
           <Card.Title>Pants</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vel ut fugit minima at? Itaque non quasi possimus, tenetur temporibus minus cupiditate totam quia explicabo, veniam rem ipsa consectetur deserunt.</p>
+              <p><span>Størrelse: </span>Medium </p>
+              <p><span>Pris: </span>250 kr</p>
+
           </Card.Text>
           <Button variant="primary">Add to cart</Button>
         </Card.Body>
@@ -51,8 +55,9 @@ function BasicExample() {
         <Card.Body>
           <Card.Title>T-shirt</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vel ut fugit minima at? Itaque non quasi possimus, tenetur temporibus minus cupiditate totam quia explicabo, veniam rem ipsa consectetur deserunt.</p>
+              <p><span>Størrelse: </span>Medium </p>
+              <p><span>Pris: </span>250 kr</p>
           </Card.Text>
           <Button variant="primary">Add to cart</Button>
         </Card.Body>
