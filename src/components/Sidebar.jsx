@@ -4,7 +4,12 @@ import React from "react";
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import OffcanvasHeader from 'react-bootstrap/OffcanvasHeader'
+import OffcanvasTitle from 'react-bootstrap/OffcanvasTitle'
+import OffcanvasBody from 'react-bootstrap/OffcanvasBody'
 import shoppingCart from "./img_171562-3516626141.png"
+import "../components/sidebar.css"
+
 
 
 /* "name" er navnet på offcanvas knappen, her referere den til "end" set i return */ 

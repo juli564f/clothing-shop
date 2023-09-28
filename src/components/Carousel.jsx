@@ -43,7 +43,7 @@ function BasicExample() {
           </Card.Text>
           <Button variant="primary">Add to cart</Button>
         </Card.Body>
-      </Card>
+       </Card>
 
       {/* Dette er kort 3 med t shirt.  */}
       <Card style={{ width: '18rem' }}>
