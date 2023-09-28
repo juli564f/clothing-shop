@@ -14,20 +14,26 @@ export default function Sidebar({}) {
 
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(!show);
+
 /* Button variant="outline-dark" er en styling der gør linjerne sorte. onclick er at man kan klikke på den. "me-2 er størrelsen",
  {shoppingcart} er ikonet for offcanvas.  */ 
  /* først har vi Button som er Offcanvas-knappen, Koden under er Offcanvas som er det der bliver vist når knappen er trykket på  */ 
   return (
     <>
-    
+
+      <div className="button1"> 
       <Button variant="outline-dark" onClick={handleShow} className="me-2">
         <img  src={shoppingCart} alt="shoppingcartlogo" style={{ width: '20px' }} />
       </Button>
+      </div>
+
+
 
       <Offcanvas show={show} onHide={handleClose} placement="end" >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Shoppingcart</Offcanvas.Title>
         </Offcanvas.Header>
+   
         <Offcanvas.Body>
           <a className="nav-link" href="#">Indkøbskurv</a>
                 <a className="nav-link" href="#">Produkter</a>
