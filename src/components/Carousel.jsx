@@ -23,7 +23,7 @@ function BasicExample() {
         <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" src={Hoodie} alt="Hoodie" />
           <Card.Body>
-            <Card.Title>Hoodie</Card.Title>
+            <Card.Title> <span>Hoodie</span></Card.Title>
             <Card.Text>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vel ut fugit minima at? Itaque non quasi possimus, tenetur temporibus minus cupiditate totam quia explicabo, veniam rem ipsa consectetur deserunt.</p>
               <p><span>Størrelse: </span>Medium </p>
@@ -38,7 +38,7 @@ function BasicExample() {
       <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={Pants} alt="Pants" />
         <Card.Body>
-          <Card.Title>Pants</Card.Title>
+          <Card.Title> <span>Pants</span> </Card.Title>
           <Card.Text>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vel ut fugit minima at? Itaque non quasi possimus, tenetur temporibus minus cupiditate totam quia explicabo, veniam rem ipsa consectetur deserunt.</p>
               <p><span>Størrelse: </span>Medium </p>
@@ -53,7 +53,7 @@ function BasicExample() {
       <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={Shirt} alt="Shirt" />
         <Card.Body>
-          <Card.Title>T-shirt</Card.Title>
+          <Card.Title> <span>T-shirt</span> </Card.Title>
           <Card.Text>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vel ut fugit minima at? Itaque non quasi possimus, tenetur temporibus minus cupiditate totam quia explicabo, veniam rem ipsa consectetur deserunt.</p>
               <p><span>Størrelse: </span>Medium </p>
