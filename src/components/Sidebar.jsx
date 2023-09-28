@@ -30,14 +30,11 @@ export default function Sidebar({}) {
 
 
       <Offcanvas show={show} onHide={handleClose} placement="end" >
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Shoppingcart</Offcanvas.Title>
-        </Offcanvas.Header>
-   
         <Offcanvas.Body>
+          <Offcanvas.Title>Shoppingcart</Offcanvas.Title>
           <a className="nav-link" href="#">Indkøbskurv</a>
-                <a className="nav-link" href="#">Produkter</a>
-                <button>Betal</button>
+          <a className="nav-link" href="#">Produkter</a>
+          <button>Pay</button>
         </Offcanvas.Body>
       </Offcanvas>
     </>

@@ -12,22 +12,30 @@
     margin: 10px;
 }
 
+/*Dette er knappen Pay*/
 button {
-    background-color: #1BC322;
+    display: flex;
+    background-color: red;
     border: none;
     font-weight: 500;
     border-radius: 100%;
     padding: 5px 15px 8px 15px;
     border-radius: 20px !important;
+    justify-items: center;
+    justify-content: center;
 }
 
 
+/*Dette er shoppingcart ikonet som er blevet rykket til højre.*/
 .button1{
     display: flex;
     justify-content: end;
 }
 
-.indhold{
+
+/*Dette er indholdet i sidebaren. */
+.offcanvas-end {
     display: flex;
     justify-content: end;
-}
+  }
+
