@@ -21,7 +21,6 @@ function App() {
         <Header/>
       </header>
       <div className='bigFlex'>
-        <Sidebar/> 
         <main>
           <Carousel/>
         </main>
