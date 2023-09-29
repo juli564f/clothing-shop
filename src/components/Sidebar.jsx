@@ -32,11 +32,9 @@ export default function Sidebar({}) {
           <Offcanvas.Title>Shoppingcart</Offcanvas.Title>
           <a className="nav-link" href="#">Indkøbskurv</a>
           <a className="nav-link" href="#">Produkter</a>
-          <button className="payButton">Pay</button>
+          <button className="payButton" style={{position: "absolute", right:'30%', left:'50', }}>Pay</button>
         </Offcanvas.Body>
-
       </Offcanvas>
-
 
     </>
   );

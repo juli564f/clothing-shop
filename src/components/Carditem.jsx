@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 //Button importeret
 import Button from 'react-bootstrap/Button';
 
+
 //Dette er vores skabelon til vores kort som indeholder tøjet.
 export default function Carditem({item}) {
   return (
