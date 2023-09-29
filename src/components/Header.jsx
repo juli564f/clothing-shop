@@ -1,7 +1,5 @@
 import Sidebar from "./Sidebar";
 
-
-
 export default function Header(props) {
     return( 
           <nav className="navbar">
