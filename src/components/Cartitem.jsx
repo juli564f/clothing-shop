@@ -4,9 +4,8 @@ import Card from 'react-bootstrap/Card';
 //Button importeret
 import Button from 'react-bootstrap/Button';
 
-
 //Dette er vores skabelon til vores kort som indeholder tøjet.
-export default function Cartitem({item,}) {
+export default function Cartitem({item,})  {
   return (
           <Card style={{ width: '18rem',  margin:'20px'}}>
               <Card.Img variant="top" src={item.img} alt="Hoodie" />
