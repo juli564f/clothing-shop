@@ -30,8 +30,7 @@ export default function Sidebar({}) {
       <Offcanvas show={show} onHide={handleClose} placement="top-end" >
         <Offcanvas.Body style={{ position: 'fixed', top: '60px', right: '0', }}> 
           <Offcanvas.Title>Shoppingcart</Offcanvas.Title>
-          <a className="nav-link" href="#">Indkøbskurv</a>
-          <a className="nav-link" href="#">Produkter</a>
+          <a className="nav-link" href="#">Products</a>
           <button className="payButton" style={{position: "absolute", right:'30%', left:'50', }}>Pay</button>
         </Offcanvas.Body>
       </Offcanvas>
