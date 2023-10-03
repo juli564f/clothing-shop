@@ -30,15 +30,14 @@ export default function Carditem({item}) {
 
 /*Card importeret. 
 import Card from 'react-bootstrap/Card';
-
-
+//Button importeret
+import Button from 'react-bootstrap/Button';
 
 
 // //Dette er vores skabelon til vores kort som indeholder tøjet.
 export default function Cartitem({item,})  {
   return (
-          
-          <Card style={{ width: '10rem', }}>
+          <Card style={{ width: '18rem',  margin:'20px'}}>
               <Card.Img variant="top" src={item.img} alt="Hoodie" />
               <Card.Body>
                   <Card.Title> <span>{item.title}</span></Card.Title>
@@ -49,11 +48,10 @@ export default function Cartitem({item,})  {
       
                   </Card.Text>
 
-                    
+                    <Button>Pay</Button>
+
                 </Card.Body>
         </Card>
-        
-      
   )
 }
 */

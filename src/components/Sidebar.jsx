@@ -16,9 +16,9 @@ import "../components/carousel.css"
 
 
 //Dette er billederne til de forskellige kort som er importeret. 
-import Hoodie from "./hoodie-png-4-3601372402.png"
+/*import Hoodie from "./hoodie-png-4-3601372402.png"
 import Pants from "./bukser.png"
-import Shirt from "./shirt.png"
+import Shirt from "./shirt.png"*/
 
 
 
@@ -65,6 +65,7 @@ export default function Sidebar({}) {
         
 
 
+         
 
           <button className="payButton" style={{position: "absolute", right:'30%', left:'50', }}>Pay</button>
         </Offcanvas.Body>
