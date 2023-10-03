@@ -4,15 +4,56 @@ import React from "react";
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import shoppingCart from "./img_171562-3516626141.png"
+import shoppingCart from "./img_171562-3516626141.png";
+
+import Cartitem from "./Cartitem";
+import AddCart from "./AddCart";
+import { Cart } from "../entities/Cart";
+
+
+import "../components/carousel.css"
+
+
+//Dette er billederne til de forskellige kort som er importeret. 
+import Hoodie from "./hoodie-png-4-3601372402.png"
+import Pants from "./bukser.png"
+import Shirt from "./shirt.png"
+
+
 
 /* "name" er navnet på offcanvas knappen, her referere den til "end" set i return */ 
 
 export default function Sidebar({}) {
   const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false)
+  const handleClose = () => setShow(false);
   const handleShow = () => setShow(!show);
+  const cartDummyData = [
+      {
+        img: Hoodie,
+        title: 'Hoodie',
+        text: 'Rød bomulds hættetrøje',
+        size:'Medium',
+        price: 450, 
+      },
+      {
+        img: Pants,
+        title:'Pants',
+        text: 'Jeans',
+        size: 'Medium',
+        price: 350,
+        
+      },
+      {
+        img: Shirt,
+        title:'T-shirt',
+        text: 'Orange t shirt',
+        size: 'Medium',
+        price: 150,
+      },
+      
+    ]
+
+    const [cart,setCart ] = useState(cartDummyData);
 
 
 /* Button variant="outline-dark" er en styling der gør linjerne sorte. onclick er at man kan klikke på den. "me-2 er størrelsen",
@@ -31,6 +72,19 @@ export default function Sidebar({}) {
         <Offcanvas.Body style={{ position: 'fixed', top: '60px', right: '0', }}> 
           <Offcanvas.Title>Shoppingcart</Offcanvas.Title>
           <a className="nav-link" href="#">Products</a>
+
+          
+        <div className="cart">
+          <AddCart cart={cart} setCart={setCart} />
+        
+          {cart.map(cart =>{
+          return <Cartitem key={cart.img} Cartitem={cart} />
+         })}
+         </div>
+        
+
+
+
           <button className="payButton" style={{position: "absolute", right:'30%', left:'50', }}>Pay</button>
         </Offcanvas.Body>
       </Offcanvas>
