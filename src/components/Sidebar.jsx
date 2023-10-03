@@ -81,9 +81,6 @@ export default function Sidebar({}) {
           return <Cartitem key={cart.img} Cartitem={cart} />
          })}
          </div>
-        
-
-
 
           <button className="payButton" style={{position: "absolute", right:'30%', left:'50', }}>Pay</button>
         </Offcanvas.Body>
