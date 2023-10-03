@@ -3,6 +3,8 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 //Button importeret
 import Button from 'react-bootstrap/Button';
+import { useState } from 'react';
+
 
 
 //Dette er vores skabelon til vores kort som indeholder tøjet.
@@ -20,8 +22,9 @@ export default function Carditem({item}) {
 
             </Card.Text>
             
-         <Button variant="primary">Add to cart</Button>
+         <Button variant="primary" >Add to cart</Button>
         </Card.Body>
   </Card>
   )
+  
 }

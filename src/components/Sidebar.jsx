@@ -7,8 +7,9 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import shoppingCart from "./img_171562-3516626141.png";
 
 import Cartitem from "./Cartitem";
+/*
 import AddCart from "./AddCart";
-import { Cart } from "../entities/Cart";
+import { Cart } from "../entities/Cart";*/
 
 
 import "../components/carousel.css"
@@ -28,32 +29,11 @@ export default function Sidebar({}) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(!show);
   const cartDummyData = [
-      {
-        img: Hoodie,
-        title: 'Hoodie',
-        text: 'Rød bomulds hættetrøje',
-        size:'Medium',
-        price: 450, 
-      },
-      {
-        img: Pants,
-        title:'Pants',
-        text: 'Jeans',
-        size: 'Medium',
-        price: 350,
-        
-      },
-      {
-        img: Shirt,
-        title:'T-shirt',
-        text: 'Orange t shirt',
-        size: 'Medium',
-        price: 150,
-      },
+
       
     ]
 
-    const [cart,setCart ] = useState(cartDummyData);
+    const [clothing, setClothing] = useState(cartDummyData);
 
 
 /* Button variant="outline-dark" er en styling der gør linjerne sorte. onclick er at man kan klikke på den. "me-2 er størrelsen",
@@ -75,12 +55,13 @@ export default function Sidebar({}) {
 
           
         <div className="cart">
-          <AddCart cart={cart} setCart={setCart} />
+          
         
-          {cart.map(cart =>{
-          return <Cartitem key={cart.img} Cartitem={cart} />
-         })}
-         </div>
+          {clothing.map(item =>{
+           return <Cartitem item={item} />
+          })}
+
+         </div> 
         
 
 
@@ -92,6 +73,7 @@ export default function Sidebar({}) {
     </>
   );
 }
+
 
 /* Her er koden for hvor den skal dukke op, vi har sat den til end, som betyder den burde poppe op i højre*/ 
 /*function Example() {

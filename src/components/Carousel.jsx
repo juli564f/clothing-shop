@@ -38,10 +38,23 @@ export default function Carousel(){
       price: 150,
     },
     
+    
   ]
 
   const [clothing, setClothing] = useState(cardDummyData);
-
+ /* const [cartItems, setCartItems] = useState([]);
+  const addItemToCart = (item) => {
+    // Logic to add item to the cart
+    setCartItems([...cartItems, item]);
+  
+   
+  }
+  
+  const removeItemFromCart = (item) => {
+    // Logic to remove item from the cart
+    const updatedCartItems = cartItems.filter((cartItem) => cartItem.id !== item.id);
+    setCartItems(updatedCartItems);*/
+  
 
   return(
     <div className="cards">
@@ -51,3 +64,18 @@ export default function Carousel(){
     </div>
   )
 }
+
+/*return (
+  <div>
+    
+    <ul>
+      {cartItems.map((item) => (
+        <li key={item.id}>{item.name} - ${item.price}</li>
+      ))}
+    </ul>
+
+  
+  </div>
+);*/
+  
+
