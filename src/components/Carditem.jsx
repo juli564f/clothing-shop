@@ -5,7 +5,9 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 
-
+function handleToCart () {
+  
+}
 
 //Dette er vores skabelon til vores kort som indeholder tøjet.
 export default function Carditem({item}) {
@@ -22,7 +24,7 @@ export default function Carditem({item}) {
 
             </Card.Text>
             
-         <Button variant="primary" >Add to cart</Button>
+         <Button variant="primary" onClick={handleToCart} >Add to cart</Button>
         </Card.Body>
   </Card>
   )
