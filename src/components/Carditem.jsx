@@ -7,6 +7,7 @@ import { useState } from 'react';
 
 function handleToCart () {
   
+  
 }
 
 //Dette er vores skabelon til vores kort som indeholder tøjet.
