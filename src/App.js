@@ -20,6 +20,9 @@ function App() {
   const [isOpen, setIsOpen] = useState (true);
   const [cart, setCart] = useState([]); // State to track items in the cart
 
+  //Vi har her valgt at opstille, hvordan websitet skal læses i forhold til props. 
+  //Vi har ekspelvis startet med at hente vores props til App js og derefter ført det videre til carousel 
+  //hvor efter vi sidst har ført det til headeren i forbindelse med at vores sidebar er i headeren. 
   return (
     <div className="App">
       <header>

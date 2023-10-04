@@ -29,11 +29,4 @@ export default function Carditem({item}) {
 }
  
 
-  // return (
-  //   <article className="card">
-      
-  //     <input type="checkbox" id={cartItem.content} />
-  //     <label htmlFor={cartItem.content}>{cartItem.content}</label>
-  //   </article>
-  // );
 
