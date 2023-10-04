@@ -18,15 +18,22 @@ import { useState } from 'react';
 
 function App() {
   const [isOpen, setIsOpen] = useState (true);
+  const [cart, setCart] = useState([]); // State to track items in the cart
 
   return (
     <div className="App">
       <header>
-        <Header/>
+        <Header
+        cart={cart}
+        setCart={setCart}/>
       </header>
       <div className='bigFlex'>
         <main>
-          <Carousel setIsOpen={setIsOpen} isOpen={isOpen}/>
+          <Carousel 
+          setIsOpen={setIsOpen} 
+          isOpen={isOpen}
+          cart={cart}
+          setCart={setCart}/>
         </main>
       </div>
     </div>
