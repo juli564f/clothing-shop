@@ -3,17 +3,22 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 //Button importeret
 import Button from 'react-bootstrap/Button';
+
 import { useState } from 'react';
 
-function handleToCart () {
-  
-  
-}
-
 //Dette er vores skabelon til vores kort som indeholder tøjet.
-export default function Carditem({item}) {
+export default function Carditem({item, removeFromList, addToCart}) {
+
+  const [isCardVisible, setIsCardVisible] = useState(true);
+
+  function handleAddToCart(){
+    addToCart(item);
+    removeFromList(item);
+    setIsCardVisible(false); // Hide the card after adding to cart
+  };
+
   return (
-    <Card style={{ width: '18rem',  margin:'20px'}}>
+    isCardVisible && <Card style={{ width: '18rem',  margin:'20px'}}>
 
         <Card.Img variant="top" src={item.img} alt="Hoodie" />
         <Card.Body>
@@ -25,7 +30,7 @@ export default function Carditem({item}) {
 
             </Card.Text>
             
-         <Button variant="primary" onClick={handleToCart} >Add to cart</Button>
+            <Button variant="primary" onClick={handleAddToCart}>Add to cart</Button>
         </Card.Body>
   </Card>
   )

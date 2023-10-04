@@ -12,7 +12,7 @@ import { useState } from "react";
 
 
 
-export default function Carousel(){
+export default function Carousel({setIsOpen, isOpen}){
   //Dette er vores datapunkt
   const cardDummyData = [
     {
@@ -42,24 +42,11 @@ export default function Carousel(){
   ]
 
   const [clothing, setClothing] = useState(cardDummyData);
- /* const [cartItems, setCartItems] = useState([]);
-  const addItemToCart = (item) => {
-    // Logic to add item to the cart
-    setCartItems([...cartItems, item]);
-  
-   
-  }
-  
-  const removeItemFromCart = (item) => {
-    // Logic to remove item from the cart
-    const updatedCartItems = cartItems.filter((cartItem) => cartItem.id !== item.id);
-    setCartItems(updatedCartItems);*/
-  
 
   return(
     <div className="cards">
       {clothing.map(item =>{
-        return <Carditem item={item} />
+        return <Carditem item={item} setIsOpen={setIsOpen} isOpen={isOpen} />
       })}
     </div>
   )
